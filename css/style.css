@@ -1,0 +1,112 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Source Sans Pro"; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1% 2%; }
+  .first .logo {
+    margin-right: 9.3%;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase; }
+    .first .logo #lo {
+      color: #da2346; }
+    .first .logo #go {
+      color: white; }
+  .first .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 64%;
+    font-size: 20px;
+    font-weight: 400;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .first .menu .menu-item {
+      text-transform: capitalize; }
+      .first .menu .menu-item a {
+        color: white;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
+      .first .menu .menu-item a:hover {
+        color: #097e89; }
+
+header {
+  background: url(../img/bg-header.png) no-repeat center/cover;
+  width: 100%;
+  height: 100vh; }
+  header hr {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 1px;
+    border: 0; }
+  header .black {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4); }
+  header .second {
+    color: white;
+    width: 54%;
+    height: 35%;
+    margin: 15% auto 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 0; }
+    header .second .second-text {
+      text-align: center;
+      font-weight: 400;
+      padding: 0 10px; }
+    header .second .best {
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 8% auto 28px; }
+  header .third {
+    padding: 13px 33px;
+    font-size: 14px;
+    font-weight: 400;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: -24px auto 0; }
+    header .third a {
+      color: white; }
+
+.under-header {
+  width: 60%;
+  margin: 0 auto; }
+  .under-header .under-item {
+    width: 50%;
+    float: left; }
+  .under-header .little-about {
+    padding: 53px 44px; }
+    .under-header .little-about h2 {
+      font-size: 24px;
+      font-weight: 400;
+      text-transform: uppercase; }
+
+.name-item-site {
+  clear: both;
+  background-color: #373737;
+  height: 150px;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  text-transform: uppercase; }
