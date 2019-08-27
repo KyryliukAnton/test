@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -51,15 +52,13 @@ header {
   width: 100%;
   height: 100vh; }
   header hr {
-    background-color: rgba(255, 255, 255, 0.3);
-    height: 1px;
-    border: 0; }
+    border: 1px solid rgba(255, 255, 255, 0.3); }
   header .black {
     width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.4); }
   header .second {
-    color: white;
+    color: #f7f7f7;
     width: 54%;
     height: 35%;
     margin: 15% auto 0;
@@ -78,35 +77,138 @@ header {
     padding: 13px 33px;
     font-size: 14px;
     font-weight: 400;
-    border: 2px solid #ffffff;
+    border: 2px solid #f7f7f7;
     text-transform: uppercase;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
     margin: -24px auto 0; }
     header .third a {
-      color: white; }
+      color: #f7f7f7; }
 
 .under-header {
-  width: 60%;
-  margin: 0 auto; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .under-header .under-item {
-    width: 50%;
-    float: left; }
+    width: 50%; }
+    .under-header .under-item img {
+      width: 100%;
+      display: block;
+      margin: 0 auto; }
   .under-header .little-about {
     padding: 53px 44px; }
     .under-header .little-about h2 {
       font-size: 24px;
       font-weight: 400;
       text-transform: uppercase; }
+  .under-header .read-more {
+    border-radius: 2px;
+    border: 0;
+    color: #f7f7f7;
+    padding: 10px 26px;
+    background-color: #05a0af;
+    text-transform: uppercase;
+    margin-top: 42px; }
+
+/*           Лінії                */
+.black-line {
+  position: relative;
+  padding: 12px 0 30px; }
+  .black-line hr {
+    position: absolute;
+    border: 1px solid black; }
+  .black-line .bold-line {
+    width: 15%;
+    margin-top: -2px;
+    border-width: 3px; }
+  .black-line .hairline {
+    width: 85%;
+    left: 15%; }
+
+.white-line {
+  position: relative;
+  width: 40%; }
+  .white-line hr {
+    position: absolute;
+    border: 1px solid #f7f7f7; }
+  .white-line .bold-line {
+    width: 15%;
+    margin-top: -2px;
+    border-width: 3px; }
+  .white-line .hairline {
+    width: 85%; }
+
+.left-line .bold-line {
+  right: 0; }
+
+.right-line .hairline {
+  right: 0; }
 
 .name-item-site {
   clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #373737;
-  height: 150px;
+  padding: 53px 44px;
   font-size: 40px;
   font-weight: 400;
   text-align: center;
   vertical-align: middle;
-  color: white;
+  color: #f7f7f7;
   text-transform: uppercase; }
+  .name-item-site .services {
+    width: 15%; }
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #3d3d3d; }
+  .service .web-development {
+    width: 33.3%;
+    text-align: center;
+    color: #f7f7f7;
+    padding: 140px 20px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .service .web-development p {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 30px 0; }
+    .service .web-development h2 {
+      font-size: 24px;
+      font-weight: 700; }
+    .service .web-development img {
+      display: block;
+      margin: 0 auto 60px; }
+    .service .web-development button {
+      display: block;
+      border-radius: 2px;
+      border: 0;
+      color: #f7f7f7;
+      font-size: 12px;
+      font-weight: 400;
+      padding: 10px 26px;
+      background-color: #959595;
+      text-transform: uppercase;
+      margin: 0 auto; }
+  .service .web-development:hover {
+    background: #097e89; }

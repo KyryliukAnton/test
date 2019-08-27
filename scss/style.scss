@@ -1,6 +1,7 @@
 $color-blue: #097e89;
 $color-border: rgba(256,256,256,0.3);
-$white: white;
+$white: #f7f7f7;
+$black: black;
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -60,9 +61,7 @@ header{
 
 	}
 	hr{
-		background-color: $color-border;
-		height: 1px;
-        border: 0;
+		border: 1px solid $color-border;
 	}
    .black{
    	width: 100%;
@@ -89,11 +88,12 @@ header{
     		margin: 8% auto 28px;
     	}
     }
+
     .third{
     	padding: 13px 33px;
     	font-size: 14px;
 		font-weight: 400;
-		border: 2px solid #ffffff;
+		border: 2px solid $white;
     	text-transform: uppercase;
     	width:  max-content;
     	margin: -24px auto 0;
@@ -104,11 +104,17 @@ header{
 }
 
 .under-header{
-	width: 60%;
-	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 .under-item{
 	width: 50%;
-	float: left;
+	img{
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 .little-about{
@@ -116,20 +122,123 @@ header{
 	h2{
 		font-size: 24px;
 		font-weight: 400;
+		//line-height: 20.11px;
 		text-transform: uppercase;
 	}
 }
+.read-more{
+	border-radius: 2px;
+	border: 0;
+	color: $white;
+	padding: 10px 26px;
+    background-color: #05a0af;
+    text-transform: uppercase;
+    margin-top: 42px;
+}
+}
+
+/*           Лінії                */
+
+.black-line{
+	position: relative;
+	padding: 12px 0 30px;
+	hr{
+		position: absolute;
+		border: 1px solid $black;
+	}
+	.bold-line{
+		width: 15%;
+		margin-top:-2px;
+		border-width: 3px;
+	}
+	.hairline{
+		width: 85%;
+		left: 15%;
+	}
+}
+
+.white-line{
+	position: relative;
+	width:40%;
+	//padding: 12px 0 30px;
+	hr{
+		position: absolute;
+		border: 1px solid $white;
+	}
+	.bold-line{
+		width: 15%;
+		margin-top:-2px;
+		border-width: 3px;
+	}
+	.hairline{
+		width: 85%;
+	} 
+}
+.left-line .bold-line{
+	right: 0;
+}
+.right-line .hairline{
+	right: 0;
 }
 
 
 .name-item-site{
 	clear: both;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-color: #373737;
-	height:150px;
+	padding: 53px 44px; 
 	font-size: 40px;
 	font-weight: 400;
 	text-align: center;
 	vertical-align: middle;
 	color: $white;
 	text-transform: uppercase;
+
+	.services{
+		width: 15%;
+	}
+}
+
+.service{
+	display: flex;
+	width: 100%;
+	justify-content:center;
+	background-color: #3d3d3d;
+	.web-development{
+		width: 33.3%;
+		text-align: center;
+		color: $white;
+		padding: 140px 20px;
+		transition: 0.3s;
+		p{
+			font-size: 14px;
+			font-weight: 400;
+			padding: 30px 0;
+		}
+		h2{
+			font-size: 24px;
+			font-weight: 700;
+		}
+		img{
+			display: block;
+			margin: 0 auto 60px;
+		}
+		button{
+			display: block;
+			border-radius: 2px;
+			border: 0;
+			color: $white;
+			font-size: 12px;
+			font-weight: 400;
+			padding: 10px 26px;
+    		background-color: #959595;
+    		text-transform: uppercase;
+   			margin: 0 auto;
+		}
+	}
+	.web-development:hover{
+		background: $color-blue;
+	}
 }
