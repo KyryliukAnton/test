@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+var notify = require("gulp-notify");
 var browserSync = require('browser-sync').create();
 
 gulp.task('sass', async function(){
@@ -11,7 +12,8 @@ gulp.task('sass', async function(){
         cascade: true
       }))
       .pipe(gulp.dest('./css'))
-  .pipe(browserSync.stream());
+  .pipe(browserSync.stream())
+   .pipe(notify(" SASS Compiled \n Your CSS files are ready sir."))
 });
 
 gulp.task('sass:watch', function(){
@@ -25,6 +27,7 @@ gulp.task('browser-sync', function() {
     }
   })
 });
+
 
 gulp.task('watch', gulp.series('sass', gulp.parallel('sass:watch', 'browser-sync')));
 
