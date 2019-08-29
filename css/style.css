@@ -18,10 +18,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1% 2%; }
+  padding: 1% 0 1% 2%; }
   .first .logo {
     margin-right: 9.3%;
     font-size: 24px;
+    padding-top: 10px;
     font-weight: 400;
     text-transform: uppercase; }
     .first .logo #lo {
@@ -37,7 +38,10 @@ a {
     font-weight: 400;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .first .menu .menu-item {
       text-transform: capitalize; }
       .first .menu .menu-item a {
@@ -46,6 +50,15 @@ a {
         transition: 0.3s; }
       .first .menu .menu-item a:hover {
         color: #097e89; }
+  .first .social-header {
+    margin: 0 auto; }
+    .first .social-header .social-items {
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      float: right;
+      margin-left: 8px; }
 
 header {
   background: url(../img/bg-header.png) no-repeat center/cover;
@@ -60,8 +73,8 @@ header {
   header .second {
     color: #f7f7f7;
     width: 54%;
-    height: 35%;
-    margin: 15% auto 0;
+    height: 350px;
+    margin: 11% auto 0;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 0; }
     header .second .second-text {
@@ -73,18 +86,16 @@ header {
       font-weight: 700;
       text-transform: uppercase;
       margin: 8% auto 28px; }
-  header .third {
-    padding: 13px 33px;
-    font-size: 14px;
-    font-weight: 400;
-    border: 2px solid #f7f7f7;
-    text-transform: uppercase;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    margin: -24px auto 0; }
-    header .third a {
-      color: #f7f7f7; }
+    header .second .third {
+      display: block;
+      padding: 13px 33px;
+      font-size: 14px;
+      font-weight: 400;
+      border: 2px solid #f7f7f7;
+      text-transform: uppercase;
+      margin: 117px auto 0;
+      color: #f7f7f7;
+      background-color: transparent; }
 
 .under-header {
   display: -webkit-box;
@@ -222,6 +233,69 @@ header {
       margin: 0 auto; }
   .service .web-development:hover {
     background: #097e89; }
+
+.info-people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #3d3d3d; }
+  .info-people .info {
+    width: 40%; }
+    .info-people .info .info-text {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 400;
+      color: #b1aeae;
+      width: 300px;
+      margin: 80px auto 0; }
+    .info-people .info .info-hr {
+      width: 100px;
+      margin: 30px auto 0;
+      border: 2px solid #b1aeae;
+      background: #b1aeae; }
+    .info-people .info .page {
+      font-size: 24px;
+      font-weight: 400;
+      margin: 30px auto 0;
+      color: #b1aeae;
+      width: 50px; }
+  .info-people .people {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 32px 21px; }
+    .info-people .people .man {
+      width: 30%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 250px;
+      height: 271px;
+      padding: 210px 10px 10px; }
+      .info-people .people .man .name-pos {
+        padding: 5px;
+        width: 90%; }
+      .info-people .people .man .number {
+        padding: 15px 17px;
+        vertical-align: middle;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        margin-right: 10px; }
+      .info-people .people .man > * {
+        background-color: #f7f7f7;
+        height: 50px; }
+    .info-people .people .man-1 {
+      background: url(../img/Model-1.png);
+      background-size: cover; }
+    .info-people .people .man-2 {
+      background: url(../img/Model-2.png);
+      background-size: cover; }
+    .info-people .people .man-3 {
+      background: url(../img/Model-3.png);
+      background-size: cover; }
 
 .clients {
   height: 400px;

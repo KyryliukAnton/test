@@ -20,10 +20,11 @@ a{
 
 .first{
 	display: flex;
-	padding: 1% 2%;
+	padding: 1% 0 1% 2%;
 	.logo{
 		margin-right:9.3%; 
 		font-size: 24px;
+		padding-top: 10px;
 		font-weight: 400;
 	 	text-transform: uppercase;
 		#lo{
@@ -39,6 +40,7 @@ a{
 		font-size: 20px;
 		font-weight: 400;
 		justify-content: space-between;
+		align-items: center;
 		.menu-item{
 			text-transform: capitalize;
 			a{
@@ -50,6 +52,17 @@ a{
 			}
 		}
 	}
+	.social-header{
+		margin: 0 auto;
+	.social-items{
+		border: 1px solid $color-border;
+		width:50px;
+		height: 50px;
+		border-radius: 50%;
+		float: right;
+		margin-left: 8px;
+	}
+}
 }
 
 header{
@@ -72,8 +85,8 @@ header{
     .second{
 		color: $white;
     	width: 54%;
-    	height: 35%;
-    	margin: 15% auto 0;
+    	height: 350px;
+    	margin: 11% auto 0;
     	border: 1px solid $color-border;
     	border-bottom: 0;
     	.second-text{
@@ -87,22 +100,19 @@ header{
     		text-transform: uppercase;
     		margin: 8% auto 28px;
     	}
-    }
-
-    .third{
-    	padding: 13px 33px;
-    	font-size: 14px;
-		font-weight: 400;
-		border: 2px solid $white;
-    	text-transform: uppercase;
-    	width:  max-content;
-    	margin: -24px auto 0;
-    	a{
-			color: $white;
-    	}
-    }
+   		 .third{
+   		 	display: block;
+    		padding: 13px 33px;
+    		font-size: 14px;
+			font-weight: 400;
+			border: 2px solid $white;
+    		text-transform: uppercase;
+    		margin: 117px auto 0;
+			color: $white; 
+			background-color: transparent;
+   	 	}
+	}
 }
-
 .under-header{
 	display: flex;
 	align-items: center;
@@ -254,6 +264,80 @@ header{
 		background: $color-blue;
 	}
 }
+
+
+
+.info-people{
+	display: flex;
+	background: #3d3d3d;
+	.info{
+		width: 40%;
+		.info-text{
+			text-align: center;
+			font-size: 24px;
+			font-weight: 400;
+			color: #b1aeae;
+			width: 300px;
+			margin: 80px auto 0;
+		}
+		.info-hr{
+			width: 100px;
+			margin: 30px auto 0;
+			border: 2px solid #b1aeae;
+			background: #b1aeae;
+		}
+		.page{
+			font-size: 24px;
+			font-weight: 400;
+			margin: 30px auto 0;
+			color: #b1aeae;
+			width: 50px
+		}
+	}
+	.people{
+		width: 60%;
+		display: flex;
+		justify-content: space-around;
+		padding: 32px 21px;
+		.man{
+			width: 30%;
+			display: flex;
+			width: 250px;
+			height: 271px;
+			padding: 210px 10px 10px;
+		.name-pos{
+			padding:5px;
+			width: 90%;
+			
+		}
+		.number{
+			padding: 15px 17px;
+			vertical-align: middle;
+			box-sizing:border-box;
+			margin-right: 10px;
+		}
+
+		&>*{
+			background-color: $white;
+			height: 50px;
+		}
+		}
+		.man-1{
+			background: url(../img/Model-1.png);
+			background-size: cover;
+		}
+		.man-2{
+			background: url(../img/Model-2.png);
+			background-size: cover;
+		}
+		.man-3{
+			background: url(../img/Model-3.png);
+			background-size: cover;
+		}
+	}
+}
+
+
 
 
 .clients{
